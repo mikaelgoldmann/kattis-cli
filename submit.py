@@ -90,7 +90,7 @@ def login(login_url, username, password=None, token=None):
     if token:
         login_args['token'] = token
 
-    return requests.post(login_url, data=login_args)
+    return requests.post(login_url, data=login_args, headers={'User-Agent': 'Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405'})
 
 
 def login_from_config(cfg):
